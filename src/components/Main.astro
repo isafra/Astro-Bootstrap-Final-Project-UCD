@@ -3,22 +3,8 @@
 ---
 
 <main>
-
     <section>
-    <div class="container">
-        <h1 class="main-title">Dublin Culture Hub</h1>
-        <p>Your ultimate guide to the vibrant cultural scene of Dublin!</p>
-    </div>
-    <section/>
-    
-    <section>
-    <div class="container">
-    <img src="./img/main-img.jpg" alt="main-image" class="img-fluid" >
-    </div>
-    </section>
-
-    <section>
-      <div class="row row-cols-1 row-cols-md-4 g-4">
+      <div class="row row-cols-1 row-cols-md-6 g-4">
       <div class="col">
       <div class="card" style="width: 16rem;">
         <img src="..." class="card-img-top" alt="...">
@@ -139,45 +125,22 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> 
 </section>
-
 </main>
+
 
 <style>
 
-  .main {
-    border-top: 0.4px solid;
-    margin-bottom: 48px;
-    display: flex;
-    
-
-  }
-
-	.main-title {
-  padding: 50px;
-  margin-left: 5px;
-  text-align:left;
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-  color: white;
-}
-
-p{
-  color: rgb(253, 255, 255);
-  font-size: 1rem;
-  text-align: left;
-}
-
-.img-fluid {
-  max-width: 50%;
-  height: auto;
-  
+.row {
+  display:flex;
+  align-items:center;
+  text-align: center;
+  flex-direction: row;
+  gap: 50px 100px;
 
 }
+
 
 .card {
   margin: 0%;
@@ -187,6 +150,7 @@ p{
   margin-top:25%;
   margin-bottom:15% ;
   display: grid;
+  flex-direction: column;
   box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
   
 }
