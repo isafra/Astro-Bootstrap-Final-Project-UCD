@@ -4,6 +4,22 @@ import H1 from '../components/H1.astro';
 import Main from '../components/Main.astro';
 import Blog from '../components/Blog.astro';
 
+async function events () {
+try
+{const response = await fetch(
+	"https://www.jambase.com/jb-api/v1/events?apikey=309b2b43-a610-45f5-93a4-ca0c0345e1e2&eventType=concert&geoCountryIso2=IE&genreSlug=blues|hip-hop-rap|jazz').then(res => res.json())",
+);
+if (!response.ok) {
+throw new Error(`HTTP error: ${response.status}`);
+}
+
+const data = await response.json();
+console.log(data[0].name);
+}
+catch (error) {
+console.error(`Could not get events: ${error}`);
+}
+}
 ---
 
 <Layout title="Dublin Culture Hub">
@@ -15,3 +31,5 @@ import Blog from '../components/Blog.astro';
 	
 </Layout>
 
+
+	fetchProducts();
