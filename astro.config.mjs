@@ -3,6 +3,6 @@ import { defineConfig } from 'astro/config';
 // https://astro.build/config
 export default defineConfig({
     // adapter: staticSite(),
-   // site: 'https://isafra.github.io/Astro-Bootstrap-Final-Project-UCD/',
-    //base: 'Astro-Bootstrap-Final-Project-UCD',
+   site: 'https://isafra.github.io',
+   base: '/Astro-Bootstrap-Final-Project-UCD',
 });
