@@ -1,5 +1,5 @@
 {
-  "name": "astro-bootstrap",
+  "name": "Astro-Bootstrap-Final-Project-UCD",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -15,5 +15,5 @@
     "astro": "^4.12.0",
     "typescript": "^5.5.4"
   },
-  "homepage": "https://isafra.github.io/Astro-Bootstrap-Final-Project-UCD"
+  "homepage": "https://isafra.github.io/Astro-Bootstrap-Final-Project-UCD/"
 }
