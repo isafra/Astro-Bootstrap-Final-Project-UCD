@@ -8,46 +8,39 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="Dublin Culture Hub">
   
     <section>
-        <div class="container mt-5">
-             <div class="main-title">
-                <h1>Contact us</h1>
-            </div>
-        </div>
-    </section>
-    <section>
     <form>
         <div class="container">
-            <div class="mb-3">
+          <div class="main-title">
+            <h1>Contact us</h1>
+              </div>
+            <div class="form mb-3">
                 <label for="exampleInputName" class="form-label">Full name</label>
                 <input type="email" class="form-control" id="exampleInputName" aria-describedby="emailHelp">
                 <div id="emailHelp" class="form-text"></div>
               </div>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            <div class="form mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+               <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+            <div class="form mb-3">
+                <label for="exampleInputName" class="form-label">Message</label>
+                <input type="email" class="form-control" id="exampleInputMessage" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text"></div>
+              </div>
+            <div class="form mb-3 form-check">
+               <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+           </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
         </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Message</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </div>
       </form>
     </section>
 
  </Layout>
 
  <style>
-
-
     
-
-
 .main-title {
     padding: 60px;
     font-size: 3rem;
@@ -57,11 +50,16 @@ import Layout from '../layouts/Layout.astro';
     text-align: center;
 }
 
-.mb-3 {
+.form {
+    padding-bottom: 45px;
+    padding-left: 45px;
+    padding-right: 45px;
     color: whitesmoke;
     font-size: 1.1rem;
-   
+
+
 }
+
 .form-text {
     font-size: 0.9rem;
     color: rgb(194, 186, 186);
