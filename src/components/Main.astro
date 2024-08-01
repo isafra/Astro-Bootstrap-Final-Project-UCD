@@ -1,5 +1,16 @@
 ---
-const { image, artist, date, location, url } = Astro.props  
+interface responseData {
+id:string
+image:string
+artist:string
+date:number
+location:string
+url:string  
+}
+
+
+const {image, artist, date, location, url} = Astro.props;
+
 ---
 
 <main>
@@ -14,9 +25,9 @@ const { image, artist, date, location, url } = Astro.props
           <p class="card-text">{location}</p>
           <a href={url} class="btn btn-primary">More info</a>
         </div>
+        </div>
       </div>
-    </div>
-    <div class="col">
+      <div class="col">
       <div class="card m-4" style="width: 20rem;">
         <img src="..." class="card-img-top" alt="...">
         <div class="card-body">
@@ -126,7 +137,8 @@ const { image, artist, date, location, url } = Astro.props
         </div>
       </div>
     </div>
-  </div> 
+  </div>
+</div>
 </section>
 </main>
 
