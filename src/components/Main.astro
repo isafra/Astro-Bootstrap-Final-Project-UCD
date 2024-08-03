@@ -14,7 +14,7 @@ const {image, artist, date, location, url} = Astro.props;
 ---
 
 <main>
-    <section class="main-content container mt-5 mb-5">
+    <section class="container lg mt-5 mb-5">
       <div class="row row-cols-1 row-cols-md-3 g-5">
       <div class="col">
       <div class="card m-4" style="width: 20rem;">
@@ -144,24 +144,30 @@ const {image, artist, date, location, url} = Astro.props;
 
 
 <style>
-.main-content {
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: space-evenly;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  gap: 50px 100px;
 
-}
-
-
-.card{
-  
+.card {
   box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
   
 }
 
+.card-title {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color:rgb(253, 252, 252);
+  font-size: 1.6rem;
   
+}
+  
+.card-text, .card-date {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color:rgb(253, 252, 252);
+  font-size: 1rem;
+
+}
+
 </style>

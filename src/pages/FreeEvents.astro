@@ -1,0 +1,96 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+
+<Layout title="Dublin Culture Hub">
+    <section>
+    <div class="container">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/Astro-Bootstrap-Final-Project-UCD/img/culturenight1.jpg" class="d-block w-100" alt="event main image">
+          </div>
+          <div class="carousel-item">
+            <img src="/Astro-Bootstrap-Final-Project-UCD/img/culturenight2.png" class="d-block w-100" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="/Astro-Bootstrap-Final-Project-UCD/img/culturenight3.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="card">
+            <div class="card-body text-center">
+              <h1>Culture night</h1><br>
+              <p class="card-text mx-5">The nineteenth edition of Culture Night will take place on Friday 20 September 2024. Culture Night / Oíche Chultúir is brought 
+                to you by the Arts Council; it is a national moment, celebrating culture, creativity and the arts and seeks to actively promote the belief 
+                that this rich and varied culture is alive, treasured and nurtured in people's lives, today and every day. It is delivered nationwide in cities,
+                towns,villages and rural locations as well as online and through our media partners.<br><br>1,205,834  people engaged with 1,700 Culture Night events in 2023.
+                <br><br>On September 20th 2024 doors will open later and special and unique events will be specifically programmed at participating locations and, 
+                thanks to the continued support of the Arts Council and Local Authorities across the island of Ireland, all activities will be available to the public
+                free of charge.</p><br><br>
+                <div class="container event-desc mx-5">
+                    <dl class="row">
+                      <dt class="col-sm-3">When?</dt>
+                      <dd class="col-sm-9">20 SEPT 2024</dd>
+                      <dt class="col-sm-3">Local:</dt>
+                      <dd class="col-sm-9">Various</dd>
+                    </dl>
+                  </div>
+            </div>
+          </div>
+    </div>
+</section>
+    
+
+</Layout>
+
+<style>
+
+.card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: white;
+
+}
+
+h1 {
+
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
+
+p {
+    
+    text-align: justify;
+    font-size:1.3rem;
+    
+}
+
+.event-desc {
+    
+    text-align:start;
+    font-size:1.3rem;
+    
+    
+    
+}
+
+</style>
