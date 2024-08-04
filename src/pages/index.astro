@@ -3,14 +3,6 @@ import Layout from '../layouts/Layout.astro';
 import H1 from '../components/H1.astro';
 import Main from '../components/Main.astro';
 import Blog from '../components/Blog.astro';
-import { convertCompilerOptionsFromJson } from 'typescript';
-
-const response = await fetch (
-	'https://www.jambase.com/jb-api/v1/events?apikey=309b2b43-a610-45f5-93a4-ca0c0345e1e2&eventType=concert&geoCountryIso2=IE&genreSlug=blues|hip-hop-rap|jazz'
-	)
-const data = await response.json()
-
-
 ---
 
 <Layout title="Dublin Culture Hub">
