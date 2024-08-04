@@ -25,10 +25,13 @@ const limitedEvents = events.slice(10, 46);
 ---
 
 <main>
+<!--main content container defining large screen, margin-top e bottom-->  
   <section class="container lg mt-5 mb-5">
+<!--grid for rponsive layout. 1 column on small screen and 3 on medium and large screen-->
     <div class="row row-cols-1 row-cols-md-3 g-5">
+<!--array to display the cards on the main page-->
       {
-        limitedEvents.map((event) => (
+        limitedEvents.map((event) => (          
           <div class="event-card">
             <img class="card-img-top" src={event.image} alt={event.name} />
             <h1 class="card-title">{event.name}</h1>
@@ -78,7 +81,7 @@ const limitedEvents = events.slice(10, 46);
 }
 
 .btn {
-  
+
   font-family: "Open Sans", sans-serif;
 
 }

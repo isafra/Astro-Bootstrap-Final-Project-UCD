@@ -12,24 +12,25 @@ import Layout from '../layouts/Layout.astro';
 <div class="card mb-5">
 <!--Row to align the content-->
   <div class="row g-0">
-<!--Column for the image. 4 of 12 spaces-->
-    <div class="col-md-4">
-<!--Fluid image displayed on the about us page -->      
-      <img src="/Astro-Bootstrap-Final-Project-UCD/img/about-img.png" class="img-fluid rounded-start" style="max-width:1100px;" alt="multicolor instruments">
+<!--Column for the image. 6 of 12 spaces-->
+    <div class="col-md-6">
+<!--Fluid image displayed on the about us page -->          
+      <img src="/Astro-Bootstrap-Final-Project-UCD/img/about-img.png" class="img-fluid rounded-start" alt="multicolor instruments">
     </div>
-<!--Column for the text. 8 of 12 spaces-->
-    <div class="col-md-8">
+<!--Column for the text. 6 of 12 spaces-->    
+    <div class="col-md-6">
       <div class="card-body">
-<!--Main title of the page-->
+<!--Main title of the page-->        
         <h1 class="card-title">About us</h1>
-<!--Paragraph about Dublin Culture Hub -->
+<!--Paragraph about Dublin Culture Hub -->        
         <p class="card-text">Welcome to Dublin Culture Hub! Our mission is to provide locals and visitors with 
           the latest information on events, concerts, festivals, and free activities happening around the city. 
-          We believe that culture is the heartbeat of Dublin, and we are passionate about promoting the rich and 
-          diverse cultural heritage that our city has to offer. At Dublin Culture Hub, our vision is to create a 
+          <br><br>We believe that culture is the heartbeat of Dublin, and we are passionate about promoting the rich and 
+          diverse cultural heritage that our city has to offer. <br><br>At Dublin Culture Hub, our vision is to create a 
           community where people can discover and engage with the cultural experiences that make Dublin unique. 
-          Whether you're interested in music, art or theatre we aim to be your go-to source for all cultural events 
+          <br><br>Whether you're interested in music, art or theatre we aim to be your go-to source for all cultural events 
           and happenings in Dublin!</p>
+        <p class="card-text"><small class="text-body-secondary"></small></p>
       </div>
     </div>
   </div>
@@ -39,31 +40,30 @@ import Layout from '../layouts/Layout.astro';
 
 
 <style>
-
             
 h1 {
     color: white;
     font-size: 3rem;
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 700;
     align-content: center;
     text-align: center;
     margin-top: 30px;
-
+    
 
     
 }
 
 p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     color: white;
     text-align: justify;
-    margin: 8%;
+    margin:20px
 
 }
-  
+
 </style>
