@@ -3,25 +3,31 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 
-<Layout title="Dublin Culture Hub">
+<Layout title="Dublin Culture Hub - Free Events">
+<!--Main section for the caroussel-->
     <section>
+<!--Container for responsive design-->      
     <div class="container">
+<!--bootstrap carousel component-->      
     <div id="carouselExampleFade" class="carousel slide carousel-fade">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="/Astro-Bootstrap-Final-Project-UCD/img/culturenight1.jpg" class="d-block w-100" alt="event main image">
+<!--first carousel image-->            
+            <img src="/Astro-Bootstrap-Final-Project-UCD/img/culturenight2.png" class="d-block w-100" alt="event main image">
           </div>
           <div class="carousel-item">
-            <img src="/Astro-Bootstrap-Final-Project-UCD/img/culturenight2.png" class="d-block w-100" alt="">
+            <img src="/Astro-Bootstrap-Final-Project-UCD/img/culturenight1.jpg" class="d-block w-100" alt="">
           </div>
           <div class="carousel-item">
             <img src="/Astro-Bootstrap-Final-Project-UCD/img/culturenight3.png" class="d-block w-100" alt="...">
           </div>
         </div>
+<!--button-previous control-->        
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
+<!--next control button-->        
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
@@ -29,11 +35,17 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </div>
 </section>
+
+<!--new section added for the first event information-->
 <section>
+<!--Container for responsive design--> 
     <div class="container">
+<!--card component to organize the content-->
         <div class="card">
             <div class="card-body text-center">
+<!--Main title for the first event-->              
               <h1 class="card-title">CULTURE NIGHT 2024</h1>
+<!--Paragraph with some information about the event. Margins and paddings defineded on the class-->              
               <p class="card-text mx-5 my-4">The nineteenth edition of Culture Night will take place on Friday 20 September 2024. Culture Night / Oíche Chultúir is brought 
                 to you by the Arts Council; it is a national moment, celebrating culture, creativity and the arts and seeks to actively promote the belief 
                 that this rich and varied culture is alive, treasured and nurtured in people's lives, today and every day. It is delivered nationwide in cities,
@@ -42,12 +54,14 @@ import Layout from '../layouts/Layout.astro';
                 thanks to the continued support of the Arts Council and Local Authorities across the island of Ireland, all activities will be available to the public
                 free of charge.</p>
             </div>
+<!--List to show information about the event. Bold style and margins defined inline-->            
             <ul class="list-group list-group-flush fw-bolder mx-5">
-              <li class="list-group-item">When? 20 Sept 2024 </li>
-              <li class="list-group-item">Where? Various Locations </li>
-              <li class="list-group-item">What time? 4pm</li>
+              <li class="list-group-item">Save the date: 20 Sept 2024 </li>
+              <li class="list-group-item">Event Spot: Various Locations </li>
+              <li class="list-group-item">Timing: 4pm</li>
             </ul>
             <div class="card-body text-center">
+<!--Button linking the event page-->              
               <a href="https://culturenight.ie" class="btn btn-light">Visit website</a>
             </div>
           </div>
@@ -73,9 +87,9 @@ import Layout from '../layouts/Layout.astro';
               street art with Jess Tobin aka Novice, live music, poetry, street spectacle, face painting, magician, quiet and sensory spaces and more!  </p>
             </div>
             <ul class="list-group list-group-flush fw-bolder mx-5">
-                <li class="list-group-item">When? Sat 3 Aug - Sun 4 Aug 2024 </li>
-                <li class="list-group-item">Where? Hugh Lane Gallery </li>
-                <li class="list-group-item">What time? 12-4pm</li>
+                <li class="list-group-item">Save the date: Sat 3 Aug - Sun 4 Aug 2024 </li>
+                <li class="list-group-item">Event Spot: Hugh Lane Gallery </li>
+                <li class="list-group-item">Timing: 12-4pm</li>
             </ul>
             <div class="card-body text-center">
               <a href="https://hughlane.ie/explore_learn/art-and-the-outdoors-2024/" class="btn btn-light">Visit website</a>
@@ -117,12 +131,45 @@ import Layout from '../layouts/Layout.astro';
             heart of Smithfield Square.” This event is organised by Dublin City Council.</p>
           </div>
           <ul class="list-group list-group-flush fw-bolder mx-5">
-              <li class="list-group-item">When? 24 Aug - 25 Aug 2024 </li>
-              <li class="list-group-item">Where? Smithfield Square </li>
-              <li class="list-group-item">What time? 12-6pm</li>
+              <li class="list-group-item">Save the date: 24 Aug - 25 Aug 2024 </li>
+              <li class="list-group-item">Event Spot: Smithfield Square </li>
+              <li class="list-group-item">Timing: 12 - 6pm</li>
           </ul>
           <div class="card-body text-center">
             <a href="https://www.dublincity.ie/news/dublin-city-council-smithfield-fleadh-returns-smithfield-square" class="btn btn-light">Visit website</a>
+          </div>
+        </div>
+      </div>
+</section>
+
+<section>
+  <div class="container">
+  <div id="carouselExampleFade" class="carousel slide carousel-fade">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/Astro-Bootstrap-Final-Project-UCD/img/oconnell.jpg" class="d-block w-100" alt="event main image">
+        </div>
+</section>
+<section>
+  <div class="container">
+      <div class="card">
+          <div class="card-body text-center">
+            <h1 class="card-title">DUBLIN FESTIVAL OF HISTORY</h1>
+            <p class="card-text mx-5 my-4">The Dublin Festival of History will run from 27 September to 13 October 2024, with our 
+            Big Weekend at the Printworks, Dublin Castle from Friday 27 September to Sunday 29 September.<br><br>
+            The Dublin Festival of History is an annual free festival, brought to you by Dublin City Council, and organised by 
+            Dublin City Libraries, in partnership with the Dublin City Council Culture Company.<br><br>
+            Now in its twelfth year, the festival has built a reputation for shining a fresh perspective on history and its 
+            importance in our everyday lives, attracting best-selling Irish and international historians to Dublin for a high-profile 
+            programme of history talks and debate each Autumn.
+          </div>
+          <ul class="list-group list-group-flush fw-bolder mx-5">
+              <li class="list-group-item">Save the date: 27 Sept - 13 Oct 2024 </li>
+              <li class="list-group-item">Event Spot: Dublin Castle</li>
+              <li class="list-group-item">Timing: Varies</li>
+          </ul>
+          <div class="card-body text-center">
+            <a href="https://dublinfestivalofhistory.ie" class="btn btn-light">Visit website</a>
           </div>
         </div>
       </div>
@@ -148,11 +195,6 @@ import Layout from '../layouts/Layout.astro';
 
 }
 
-h1 {
-
-    font-size: 2.5rem;
-
-}
 
 p {
     
@@ -164,8 +206,10 @@ p {
 .list-group {
    
     text-align:start;
-    font-size:1.3rem;
+    font-size:1.2rem;
     border: none;
+    
+
 
 }
 

@@ -3,48 +3,48 @@
 
 ---
 <section>
-    <div class="container-fluid">
+    <div class="container-fluid ">
       <div class="blog-content">
       <h2 class="blog-title">Blog Posts</h2>
       <h3>Stay updated with the newest insights!</h3>
-      <div class="card mb-3" style="max-width: 540px;">
+      <div class="card d-flex align-items-center border border-2 mb-3" style="max-width: 740px;">
         <div class="row g-0">
           <div class="col-md-4">
-            <img src="..." class="img-fluid rounded-start" alt="...">
+            <img src="/Astro-Bootstrap-Final-Project-UCD/img/img-blog1.png" class="img-fluid rounded-start" alt="image of the old reels of the word">
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              <h5 class="card-title">Rare Recordings of Tommie Potts, Séamus Ennis and Séan Keane Featured on New Album from the Irish Traditional Music Archive</h5>
+              <p class="card-text">Release draws on the recently donated private collections of Tom Davis, Tony MacMahon and Larry Redican.</p>
+              <a href="https://journalofmusic.com/news/rare-recordings-tommie-potts-seamus-ennis-and-sean-keane-featured-new-album-irish-traditional" class="btn btn-light">Check it out!</a>
             </div>
           </div>
         </div>
       </div>
-      <div class="card mb-3" style="max-width: 540px;">
+      <div class="card d-flex align-items-center border border-2 mb-3" style="max-width: 740px;">
         <div class="row g-0">
           <div class="col-md-4">
-            <img src="..." class="img-fluid rounded-start" alt="...">
+            <img src="/Astro-Bootstrap-Final-Project-UCD/img/img-blog2.jpg" class="img-fluid rounded-start" alt="image of Irish Concertina Orchestra">
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              <h5 class="card-title">Auditions for the Irish Concertina Orchestra 2024-25</h5>
+              <p class="card-text">This is an opportunity for concertina players aged between 10 and 18 to compose, arrange and perform with artists such as NOTIFY, Cormac McCarthy and the MGCE (Music Generation Clare) Concert Orchestra.</p>
+              <a href="https://journalofmusic.com/listing/03-08-24/auditions-irish-concertina-orchestra-2024-25" class="btn btn-light">Check it out!</a>
             </div>
           </div>
         </div>
       </div>
-      <div class="card mb-3" style="max-width: 540px;">
+      <div class="card d-flex align-items-center border border-2 mb-3" style="max-width: 740px;">
         <div class="row g-0">
           <div class="col-md-4">
-            <img src="..." class="img-fluid rounded-start" alt="...">
+            <img src="/Astro-Bootstrap-Final-Project-UCD/img/img-blog3.jpg" class="img-fluid rounded-start" alt="the arts concil">
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              <h5 class="card-title">Ireland at Venice 2026 - Call for Expressions of Interest</h5>
+              <p class="card-text">Culture Ireland, in partnership with the Arts Council, invites expressions of interest to curate the Irish representation at the 61st International Art Exhibition at La Biennale di Venezia 2026.</p>
+              <a href="https://journalofmusic.com/listing/10-07-24/call-expressions-interest-curation-ireland-venice-2026" class="btn btn-light">Check it out!</a>
             </div>
           </div>
         </div>
@@ -58,34 +58,62 @@
 .container-fluid {
   display: flex;
   flex-direction:column;
-  justify-content:space-between;
   align-items: center;
   text-align: center;
-  margin-top:10% ;
-  background-color:rgb(210, 203, 203);
+  margin-top:10%;
+  background-color: rgb(2, 2, 2);
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  
   
 }
 
 .blog-title{
-  font-size:2.5rem;
-  color: white;
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
 
+  font-size:3rem;
+  color: white;
+  font-weight: 800;
+ 
 }
 
 h3 {
-  font-size: 1rem;
-  color: rgb(210, 203, 203);
+
+  font-size: 1.2rem;
+  color: rgb(224, 218, 218);
   padding-bottom: 40px;
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
+  font-weight: 600;
+  margin-bottom: 30px;
+
 }
 
+
+h5 {
+
+  font-size: 1.2rem;
+  color: rgb(210, 203, 203);
+  padding-bottom: 40px;
+  font-weight: 600;
+  text-align: justify;
+  margin: 10px;
+  
+
+}
+
+p {
+
+  font-size: 1rem;
+  color: rgb(246, 241, 241);
+  padding-bottom: 40px;
+  font-weight: 300;
+  text-align: justify;
+  margin: 10px;
+
+}
+
+.img-fluid {
+  height:300px;
+  
+}
   </style>

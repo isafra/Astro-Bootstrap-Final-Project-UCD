@@ -5,35 +5,52 @@ import Layout from '../layouts/Layout.astro';
 
 ---
 
-<Layout title="Dublin Culture Hub">
+<Layout title="Dublin Culture Hub - Contact us">
   
     <section>
+<!--form for input-->   
     <form>
+<!--Container for responsive design--> 
         <div class="container">
+<!--contact form main title-->          
           <div class="main-title">
             <h1>Contact us</h1>
-              </div>
-            <div class="form mb-3">
+<!--some styles to keep the image centered. Margins and paddings defined as well-->            
+          <div class="d-flex justify-content-center mx-5 my-5">
+          <div class="main-image" style="max-width: 700px;">
+            <img src="/Astro-Bootstrap-Final-Project-UCD/img/contact.jpg" class="img-fluid rounded-start" alt="multicolor instruments">
+        </div>
+        </div>
+      </div>
+<!--second container for the form elements-->      
+        <div class="container">
+            <div class="form mb-2">
                 <label for="exampleInputName" class="form-label">Full name</label>
                 <input type="email" class="form-control" id="exampleInputName" aria-describedby="emailHelp">
                 <div id="emailHelp" class="form-text"></div>
               </div>
-            <div class="form mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email</label>
+            <div class="form mb-2">
+                <label for="exampleInputEmail1" class="form-label">E-mail</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
               </div>
-            <div class="form mb-3">
-                <label for="exampleInputName" class="form-label">Message</label>
-                <input type="email" class="form-control" id="exampleInputMessage" aria-describedby="emailHelp">
+              <div class="form mb-2">
+                <label for="exampleInputName" class="form-label">Phone number</label>
+                <input type="email" class="form-control" id="exampleInputName" aria-describedby="emailHelp">
                 <div id="emailHelp" class="form-text"></div>
               </div>
-            <div class="form mb-3 form-check">
-               <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            <div class="form mb-2">
+                <label for="exampleInputMessage" class="form-label">Message</label>
+                <textarea class="form-control" id="exampleInputMessage" rows="5" aria-describedby="messageHelp"></textarea>
+                <div id="messagelHelp" class="form-text"></div>
+              </div>
+            <div class="form mb-2 form-check">
+               <input type="checkbox" class="form-check-input ms-1" id="exampleCheck1">
+              <label class="form-check-label ms-4" for="exampleCheck1">Check me out</label>
            </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-light ms-5 mb-5">Submit</button>
         </div>
+      </div>
       </form>
     </section>
 
@@ -41,8 +58,11 @@ import Layout from '../layouts/Layout.astro';
 
  <style>
     
+
+
 .main-title {
-    padding: 60px;
+    
+
     font-size: 3rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 100;
@@ -55,7 +75,7 @@ import Layout from '../layouts/Layout.astro';
     padding-left: 45px;
     padding-right: 45px;
     color: whitesmoke;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
 
 
 }

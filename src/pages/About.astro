@@ -5,16 +5,24 @@ import Layout from '../layouts/Layout.astro';
 
 ---
 
-<Layout title="Dublin Culture Hub">
+<Layout title="Dublin Culture Hub - About us">
+<!--Container for responsive design. Margin-top defined as well--> 
 <div class="container d-flex justify-content-center mt-5">
+<!--card component to organize the content-->
 <div class="card mb-5">
+<!--Row to align the content-->
   <div class="row g-0">
+<!--Column for the image. 4 of 12 spaces-->
     <div class="col-md-4">
-      <img src="/Astro-Bootstrap-Final-Project-UCD/img/about.png" class="img-fluid rounded-start" alt="multicolor instruments">
+<!--Fluid image displayed on the about us page -->      
+      <img src="/Astro-Bootstrap-Final-Project-UCD/img/about-img.png" class="img-fluid rounded-start" style="max-width:1100px;" alt="multicolor instruments">
     </div>
+<!--Column for the text. 8 of 12 spaces-->
     <div class="col-md-8">
       <div class="card-body">
+<!--Main title of the page-->
         <h1 class="card-title">About us</h1>
+<!--Paragraph about Dublin Culture Hub -->
         <p class="card-text">Welcome to Dublin Culture Hub! Our mission is to provide locals and visitors with 
           the latest information on events, concerts, festivals, and free activities happening around the city. 
           We believe that culture is the heartbeat of Dublin, and we are passionate about promoting the rich and 
@@ -22,7 +30,6 @@ import Layout from '../layouts/Layout.astro';
           community where people can discover and engage with the cultural experiences that make Dublin unique. 
           Whether you're interested in music, art or theatre we aim to be your go-to source for all cultural events 
           and happenings in Dublin!</p>
-        <p class="card-text"><small class="text-body-secondary"></small></p>
       </div>
     </div>
   </div>
@@ -42,7 +49,8 @@ h1 {
     font-weight: 600;
     align-content: center;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 30px;
+
 
     
 }

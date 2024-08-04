@@ -6,9 +6,9 @@ export interface Performer {
 
 export interface Event {
  name: string;
+ endDate: number;
  url: string;
  image: string;
- performer: Performer[];
 }
 
 export interface EventsResponse {
@@ -20,7 +20,7 @@ const API =
 
 const response = await fetch(API);
 const { events }: EventsResponse = await response.json();
-const limitedEvents = events.slice(0, 36);
+const limitedEvents = events.slice(10, 46);
 
 ---
 
@@ -31,10 +31,8 @@ const limitedEvents = events.slice(0, 36);
         limitedEvents.map((event) => (
           <div class="event-card">
             <img class="card-img-top" src={event.image} alt={event.name} />
-            <h3 class="card-title">{event.name}</h3>
-            <p class="card-text">
-              Artists: {event.performer.map((p) => p.name).join(", ")}
-            </p>
+            <h1 class="card-title">{event.name}</h1>
+            <p class="card-date">{event.endDate}</p>
             <a class="btn btn-light " href={event.url} target="_blank">
               Find out
             </a>
@@ -49,11 +47,13 @@ const limitedEvents = events.slice(0, 36);
 <style>
 
 .event-card {
+
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   text-align: center;
 }
 
 .card-title {
+
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 200;
@@ -65,18 +65,22 @@ const limitedEvents = events.slice(0, 36);
   
 }
   
-.card-text {
+.card-date {
+
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
   color:rgb(253, 252, 252);
-  font-size: 1rem;
+  font-size: 1.1rem;
+  margin-top: 10px;
   
 }
 
 .btn {
+  
   font-family: "Open Sans", sans-serif;
+
 }
 
 </style>
