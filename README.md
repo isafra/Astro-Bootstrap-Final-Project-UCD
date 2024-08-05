@@ -1,4 +1,4 @@
-# DUBLIN CULTURE HUB - Final Project UCD
+# DUBLIN CULTURE HUB - Final Project UCD   
 ![DCH icon](./public/img/icon1.png)
 Welcome to Dublin Culture Hub, your ultimate guide to the vibrant cultural scene of Dublin! This project provides information on events, concerts, festivals, and free activities happening around the city. This website was created as part of the final assessement of Front-end web development course offered by UCD.
 
