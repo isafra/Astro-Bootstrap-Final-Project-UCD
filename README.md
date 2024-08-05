@@ -8,7 +8,7 @@ Welcome to Dublin Culture Hub, your ultimate guide to the vibrant cultural scene
 - <a href="#Technologies used">Technologies used</a>
 
 ## Overview 
-Dublin Culture Hub is a website that helps locals and visitors discover what is going on in Dublin cultural scene. The page includes a main section containing a range of concerts and a blog showing articles related to art in general. The user will also find a section of free events, information about the website and a contact page.
+Dublin Culture Hub is a website that helps locals and visitors discover what is going on in Dublin's cultural scene. The page includes a main section containing a range of concerts and a blog showing articles related to art in general. The user will also find a section of free events, information about the website and a contact page.
 
 ## Features
 - [x] Home page
