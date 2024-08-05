@@ -18,7 +18,7 @@ Dublin Culture Hub is a website that helps locals and visitors discover what is 
 - [x] Free events
     - A carousel with the most important free events and information about date, location and time. 
 - [x] About
-   - Details about the vision of Dublin Cultural Hub.
+   - Details about the mission and vision of Dublin Cultural Hub.
 - [x] Contact us
    - A form that allows users to send messages to us.
 
